@@ -29,3 +29,30 @@
 **System Prompt:** "Generate a performance evaluation script to calculate mAP50 and confidence intervals across three domains. Output the results as a grouped bar chart for academic reporting."
 **Output:** AI provided the statistical extraction code and the `matplotlib` configuration for high-resolution, academic-grade charts.
 **Reflection:** AI was used here to transform raw JSON inference logs into a structured comparative analysis, providing the mathematical proof that the retraining phase successfully recovered the detection ceiling of the sharp ground-truth images.
+
+
+## Miscellaneous & Cross-Task Engineering Support
+
+### 6. Code Refactoring & Modularization
+**Date:** 2026-04-01
+**System Prompt:** "Refactor the existing Jupyter Notebook cells into a modular Python directory structure (`/scripts`). Implement `argparse` for all task scripts to allow for headless CLI execution and improve reproducibility."
+**Output:** AI provided a template for converting monolithic functions into standalone `.py` scripts with standardized input/output flags.
+**Reflection:** This was a critical step for transitioning from a research state to a modular software product. The use of AI accelerated the boilerplate creation for CLI arguments, ensuring the repository met academic software engineering standards.
+
+### 7. Dependency Management & Environment Replication
+**Date:** 2026-04-02
+**System Prompt:** "Analyze the imported libraries across all five task scripts and generate a minimal `requirements.txt` file. Ensure version pinning for `ultralytics` and `scikit-image` to prevent future API breaks."
+**Output:** AI generated a clean dependency list including `opencv-python`, `skimage`, and `pandas`.
+**Reflection:** Automating the dependency audit ensured that the "Prerequisites" section of the documentation was accurate and that the pipeline remains functional across different hardware environments.
+
+### 8. Technical Documentation & Repository Architecture
+**Date:** 2026-04-02
+**System Prompt:** "Draft a professional `README.md` for a computer vision project. Include a tree-view repository structure, detailed installation instructions, and a usage guide for four distinct CLI tasks."
+**Output:** AI authored the structural framework of the documentation, including markdown formatting for code blocks and tables.
+**Reflection:** AI was used here as a technical writer to ensure the repository was self-documenting. I manually verified the file paths and usage commands to ensure they aligned with the actual directory structure on GitHub.
+
+### 9. Debugging & Error Handling
+**Date:** 2026-04-02
+**System Prompt:** "Troubleshoot a `FileNotFoundError` occurring when running the stratification script in the Colab environment. Resolve the discrepancy between relative and absolute paths in the `data/raw` directory."
+**Output:** AI identified a pathing logic error in the Python `Pathlib` implementation and suggested a workaround using absolute paths for the Colab runtime.
+**Reflection:** This interaction demonstrated the utility of AI in rapid debugging. The resulting fix made the pipeline environment-agnostic, allowing it to run seamlessly on both local machines and cloud platforms.
